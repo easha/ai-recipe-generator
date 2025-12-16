@@ -13,8 +13,8 @@ export function request(ctx) {
   },
   body: JSON.stringify({
   anthropic_version: "bedrock-2023-05-31",
-  _tokens: 1000,
- messages: [
+  max_tokens: 1000,
+  messages: [
  {
  role: "user",
  content: [

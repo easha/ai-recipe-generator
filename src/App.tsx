@@ -19,7 +19,7 @@ function App() {
  try {
  const formData = new FormData(event.currentTarget);
  const { data, errors } = await
-amplifyClient.queries.askBedrock({
+ amplifyClient.queries.askBedrock({
  ingredients: [formData.get("ingredients")?.toString() || ""],
  });
  if (!errors) {
@@ -44,7 +44,7 @@ amplifyClient.queries.askBedrock({
  <p className="description">
  Simply type a few ingredients using the format ingredient1,
  ingredient2, etc., and Recipe AI will generate an all-new
-recipe on
+ recipe on
  demand...
  </p>
  </div>
